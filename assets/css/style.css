@@ -9,6 +9,7 @@ body {
     padding: 1em;
     text-align: center;
     color: #fff;
+    display: none;
 }
 
 #subwrapper h2 {
