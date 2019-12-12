@@ -21,11 +21,6 @@ var questions = [{
     correctAnswer: "Tesla Roadster",
     image: "assets/images/imagename",
 },{
-    question: "What was the first car launched into space?",
-    answers: ["Nissan Skyline", "Acura NSX", "Tesla Roadster", "Ford Pinto"],
-    correctAnswer: "Tesla Roadster",
-    image: "assets/images/imagename",
-},{
     question: "What animal is on the Porsche logo?",
     answers: ["Bird", "Horse", "Lion", "Bull"],
     correctAnswer: "Horse",
