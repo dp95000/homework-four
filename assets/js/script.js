@@ -36,14 +36,14 @@ var game = {
     },
     loadQuestion: function (){
         timer = setInterval(game.countdown,1000);
-        $('#subwrapper').html("<h2> Time to Guess: <span id ='counter'>30</span> Seconds</h2>");
+        $('#subwrapper').html("<h2> Time to Guess: <span id ='counter'>"+game.counter+"</span> Seconds</h2>");
         $('#subwrapper').append('<h2>'+questions[game.currentQuestion].question+'</h2>');
         for(var i=0;i<questions[game.currentQuestion].answers.length;i++){
             $('#subwrapper').append('<button class="answer-button id="button- '+i+'" data-name="'+questions[game.currentQuestion].answers[i]+'">'+questions[game.currentQuestion].answers[i]+'</button>');
         }
     },
     nextQuestion: function(){
-        game.counter = 30;
+       // game.counter = 30;
         $('#counter').html(game.counter);
         game.currentQuestion++;
         game.loadQuestion();
@@ -65,7 +65,7 @@ var game = {
         clearInterval(timer);
         $('#subwrapper').html('<h2>Complete!</h2>');
             var initials = prompt("Enter Your Initials");
-            var highScore = 0;
+            var highScore = localStorage.getItem("Your Score") || 0;
 
             if (highScore == 0){
                 highScore = game.correct;
@@ -113,6 +113,7 @@ var game = {
         console.log("wrong")
         clearInterval(timer);
         game.incorrect++;
+        game.counter = game.counter - 10;
         $('#subwrapper').html('<h2> Wrong!</h2>');
         $('#subwrapper').append('<h3>The correct answer was: '+questions[game.currentQuestion].correctAnswer+'</h3>');
         if(game.currentQuestion==questions.length-1){
