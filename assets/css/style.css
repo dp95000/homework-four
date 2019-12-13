@@ -1,6 +1,5 @@
 body {
     background-image: url(../images/bg.jpg);
-    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -25,8 +24,9 @@ body {
     color: #fff;
 }
 
+button#reset:hover, a#start:hover {opacity: .8}
+
 button#reset, a#start {
-    padding: .5em;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 20px;
@@ -35,10 +35,22 @@ button#reset, a#start {
     color: #fff;
 }
 
-button#reset:hover, a#start:hover {opacity: .8}
-
 @media (max-width: 800px) {
     body {background-size: initial;}
     h1 {font-size: 4em!important;}
     h3 {font-size: 3em!important;}
+    
+    button#reset, a#start {
+        padding: .5em;
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 801px) {
+    body {background-size: cover;}
+
+    button#reset, a#start {
+        padding: 1em;
+        font-size: 1em;
+    }
 }
