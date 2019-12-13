@@ -101,6 +101,9 @@ var game = {
         console.log("right!")
         clearInterval(timer);
         game.correct++;
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/sounds/right.mp3");
+        audioElement.play();
         $('#subwrapper').html('<h2> CORRECT!</h2>');
         if(game.currentQuestion==questions.length-1){
             setTimeout(game.results,2*1000);
@@ -114,6 +117,9 @@ var game = {
         clearInterval(timer);
         game.incorrect++;
         game.counter = game.counter - 10;
+        var audioElement = document.createElement("audio");
+        audioElement.setAttribute("src", "assets/sounds/wrong.wav");
+        audioElement.play();
         $('#subwrapper').html('<h2> Wrong!</h2>');
         $('#subwrapper').append('<h3>The correct answer was: '+questions[game.currentQuestion].correctAnswer+'</h3>');
         if(game.currentQuestion==questions.length-1){

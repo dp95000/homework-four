@@ -9,7 +9,7 @@ var questions = [{
     answers: ["Porsche 911", "Bugatti Veyron", "Lamborgini Aventador", "Rolls Royce Phantom"],
     correctAnswer: "Bugatti Veyron",
 }, {
-    question: "What was the first production year for the Corvetter?",
+    question: "What was the first production year for the Corvette?",
     answers: ["1943", "1953", "1963", "1973"],
     correctAnswer: "1953",
 },{

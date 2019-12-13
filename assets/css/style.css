@@ -36,3 +36,9 @@ button#reset, a#start {
 }
 
 button#reset:hover, a#start:hover {opacity: .8}
+
+@media (max-width: 800px) {
+    body {background-size: initial;}
+    h1 {font-size: 4em!important;}
+    h3 {font-size: 3em!important;}
+}
