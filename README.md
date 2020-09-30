@@ -11,4 +11,4 @@ When the user has answered all questions (or when time runs out), the user will 
 
 The high score is recorded to local storage so if the user scores lower on the second play-through, the previous high score will still display.
 
-![Application Screenshot](public/assets/img/screenshot.jpg)
+![Application Screenshot](assets/images/screenshot.jpg)
