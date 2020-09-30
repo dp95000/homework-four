@@ -1,5 +1,5 @@
-# Homework Assignment # 4
-Homework assignment for week 4 - Timed Quiz Built in Jquery.
+# Timed Car Quiz
+Timed Quiz Built in Jquery.
 
 # Overview
 This project involved building a timed quiz in jquery.  For this project, I chose to go with an automotive theme for the questions presented.  How much automotive trivia do you know?  Take the quiz and find out!
@@ -10,3 +10,5 @@ The user is first presented with an opening message and a start button.  Clickin
 When the user has answered all questions (or when time runs out), the user will be prompted for their initials.  At the same time, their score will be recorded.  The user will see their initials and high score, as well the number of questions answered correctly and incorrectly, displayed on the final results page.  On this page, the user will also see a "try again" button that will reset the game so it can be played through again.
 
 The high score is recorded to local storage so if the user scores lower on the second play-through, the previous high score will still display.
+
+![Application Screenshot](public/assets/img/screenshot.jpg)
